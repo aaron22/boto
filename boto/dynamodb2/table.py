@@ -805,7 +805,7 @@ class Table(object):
         kwargs = {
             'limit': limit,
             'index_name': index,
-            'scan_index_forward': reverse,
+            'scan_index_forward': not reverse,
             'consistent_read': consistent,
             'select': select,
             'attributes_to_get': attributes_to_get
